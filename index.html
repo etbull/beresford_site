@@ -11,7 +11,7 @@
   h1 span{display:block;font-size:.48em;letter-spacing:1.08em;margin-right:-1.08em}
   header,footer{text-align:center}
   a{color:inherit;font-size:16px;text-underline-offset:4px}
-  #w{margin:auto 0;padding:42px 0 60px;overflow-x:auto;white-space:nowrap;scrollbar-width:none;cursor:grab;mask-image:linear-gradient(90deg,transparent,#000 15%,#000 85%,transparent);text-transform:uppercase;letter-spacing:.13em}
+  #w{margin:auto 0;padding:42px 0 60px;overflow-x:auto;white-space:nowrap;scrollbar-width:none;cursor:grab;user-select:none;mask-image:linear-gradient(90deg,transparent,#000 15%,#000 85%,transparent);text-transform:uppercase;letter-spacing:.13em}#w:active{cursor:grabbing}
 </style>
 <header>
   <h1>BERESFORD<span>RESEARCH</span></h1>
@@ -20,6 +20,6 @@
   <p>Beresford Research is an independent technology research and development company. We explore ideas in computing, mathematics and artificial intelligence, and build software where those ideas have practical applications.</p>
 </main>
 <div id="w"></div>
-<script>w.innerHTML='Coming Soon&nbsp;·&nbsp;'.repeat(12);w.onscroll=()=>{h=w.scrollWidth/2;w.scrollLeft=(w.scrollLeft-1+h)%h+1};w.scrollLeft=1;v=1,f=0;setInterval(()=>{v+=(!w.matches(":hover")-v)/25;f+=v;w.scrollLeft+=f|0;w.onscroll();f%=1},40)</script>
+<script>w.innerHTML='Coming Soon&nbsp;·&nbsp;'.repeat(12);w.onscroll=()=>{h=w.scrollWidth/2;w.scrollLeft=(w.scrollLeft-1+h)%h+1};w.onmousemove=e=>e.buttons&&(w.scrollLeft-=e.movementX);w.scrollLeft=1;v=1,f=0;setInterval(()=>{v+=(!w.matches(":hover")-v)/25;f+=v;w.scrollLeft+=f|0;w.onscroll();f%=1},40)</script>
 <footer><div class="logo" aria-hidden="true">∴</div><a href="mailto:contact@bsfrd.com">contact@bsfrd.com</a></footer>
 </html>
