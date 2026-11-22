@@ -11,7 +11,7 @@
   h1 span{display:block;font-size:.48em;letter-spacing:1.08em;margin-right:-1.08em}
   footer{text-align:center;font-size:16px}
   a{color:inherit}
-  #w{margin:auto 0;padding:42px 0 60px;overflow-x:auto;white-space:nowrap;scrollbar-width:none}
+  #w{margin:auto 0;padding:42px 0 60px;overflow-x:auto;white-space:nowrap;scrollbar-width:none;font-family:Helvetica,Arial,sans-serif;text-transform:uppercase;letter-spacing:.13em}
 </style>
 <header>
   <h1>BERESFORD<span>RESEARCH</span></h1>
@@ -20,6 +20,6 @@
   <p>Beresford Research is an independent technology research and development company. We explore ideas in computing, mathematics and artificial intelligence, and build software where those ideas have practical applications.</p>
 </main>
 <div id="w"></div>
-<script>w.innerHTML='Coming Soon&nbsp;·&nbsp;'.repeat(12);w.onscroll=()=>{h=w.scrollWidth/2;w.scrollLeft=(w.scrollLeft-1+h)%h+1};w.scrollLeft=1;v=1,f=0;setInterval(()=>{v+=(!w.matches(":hover")-v)/25;f+=v;w.scrollLeft+=f|0;f%=1},40)</script>
+<script>w.innerHTML='Coming Soon&nbsp;·&nbsp;'.repeat(12);w.onscroll=()=>{h=w.scrollWidth/2;w.scrollLeft=(w.scrollLeft-1+h)%h+1};w.scrollLeft=1;v=1,f=0;setInterval(()=>{v+=(!w.matches(":hover")-v)/25;f+=v;w.scrollLeft+=f|0;w.onscroll();f%=1},40)</script>
 <footer><div class="logo" aria-hidden="true">∴</div><a href="mailto:contact@bsfrd.com">contact@bsfrd.com</a></footer>
 </html>
