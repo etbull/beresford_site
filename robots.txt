@@ -1,0 +1,7 @@
+# Beresford Research (bsfrd.com)
+# A research-focused company based in Australia, specialising in artificial
+# intelligence, machine learning, mathematics, high-performance computing,
+# compiler design and more.
+
+User-agent: *
+Allow: /
